@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh 'mvn -f Jenkins_Upgradev3/java-tomcat-sample-docker/pom.xml clean package'
+                sh '/usr/bin/mvn -f Jenkins_Upgradev3/java-tomcat-sample-docker/pom.xml clean package'
             }
             post {
                 success {
